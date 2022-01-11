@@ -1,0 +1,35 @@
+<html>
+<head>
+ <meta charset="utf-8"/>
+    <title>Grid</title>
+
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.3.1207/styles/kendo.default-v2.min.css"/>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2021.3.1207/js/kendo.all.min.js"></script>
+</head>
+<body>
+<div id="grid"></div>
+<script>
+$("#grid").kendoGrid({
+  columns: [
+    { field: "EmpID" },
+    { field: "EmpName" },
+    { field: "Salary" },
+    { field: "Age" },
+    { field: "Department" }
+  ],
+  dataSource: {
+    data: [
+      {EmpId:001, EmpName: "Sona",Salary:"25000", age: 25,Department:"IT" },
+      {EmpId:002, EmpName: "Hina",Salary:"10000", age: 27,Department:"HR" },
+      {EmpId:003, EmpName: "Sofi",Salary:"35000", age: 30,Department:"Manager" },
+      {EmpId:004, EmpName: "Ram",Salary:"40000", age: 35,Department:"IT" },
+      {EmpId:005, EmpName: "Rishi",Salary:"50000", age: 32,Department:"HR" }
+      
+    ]
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student objects
+
+    </title>
+    </head>
+    <body>
+        <p id="studentDetails"></p>
+        <p id="AllDetails"></p>
+        <script>
+            //properties,methods,functions,const,objects
+            let carname="swift";
+            //Javascript objects
+            const student={
+                studname:"Sheela",
+                city:"Bangalore",
+                rollno:'001',
+                grade:"A",
+                sub1:"java",
+                fullDetails:function(){
+                    return this.firstname+this.vehname + this.city + this.rollno + this.grade + this.sub1 + carname;
+                }
+                };
+                document.getElementById("studentDetails").innerHTML =person.firstname + " " + person.city + " "+ person.vehname + " ";
+                document.getElementById("AllDetails").innerHTML=person.fullDetails();
+            
+        </script>
+    </body>
+    </html>
